@@ -1,9 +1,7 @@
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { CacheInterceptor, CacheModule, Module } from '@nestjs/common';
-import { HttpModule } from '@nestjs/axios';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
+import { ApiModule } from './modules/api.module';
 
 @Module({
   imports: [
@@ -11,11 +9,9 @@ import { ConfigModule } from '@nestjs/config';
     CacheModule.register({
       ttl: 60, // cache will expire in 60 seconds
     }),
-    HttpModule,
+    ApiModule,
   ],
-  controllers: [AppController],
   providers: [
-    AppService,
     {
       provide: APP_INTERCEPTOR,
       useClass: CacheInterceptor, // we use memoization cache in all services
