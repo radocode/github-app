@@ -1,0 +1,20 @@
+{
+  "name": "github-app",
+  "version": "1.0.0",
+  "description": "Github app made in Angular and Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "(cd frontend/github-app && npm install); (cd backend/github-api && npm install);"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radocode/github-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radocode/github-app/issues"
+  },
+  "homepage": "https://github.com/radocode/github-app#readme"
+}
