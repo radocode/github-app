@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubApiService } from 'src/app/services/github-api.service';
-import { delay } from 'rxjs/operators';
 import { DarkToggleService } from 'src/app/services/dark-toggle.service';
 
 @Component({
@@ -22,12 +21,9 @@ export class RepoListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.githubApiService
-      .getCommits()
-      .pipe(delay(700))
-      .subscribe((r) => {
-        this.commits = r;
-        this.loaded = true;
-      });
+    this.githubApiService.getCommits().subscribe((r) => {
+      this.commits = r;
+      this.loaded = true;
+    });
   }
 }
