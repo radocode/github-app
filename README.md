@@ -8,7 +8,7 @@ Node v14 or greater with npm.
 
 ## Installation
 
-For installation, you only need to run:
+For installation, you only need to run the usual npm dependency installation in your terminal. It will execute all the installation process automatically:
 
 ```bash
 npm install
@@ -16,11 +16,15 @@ npm install
 
 ## Usage
 
-Finally, in order to run the project, you need to run the script inside the main folder:
+Finally, in order to run the project, you need to run the script inside the root folder:
 
 ```bash
 npm run start
 ```
+
+Keep the terminal open as it runs both backend and frontend development servers.
+
+To Open the app, just browse to localhost:4200
 
 ## Contributing
 
