@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  githubServiceUrl: process.env['GITHUB_SERVICE_URL'],
+  githubServiceUrl: 'http://localhost:4200/api',
 };
