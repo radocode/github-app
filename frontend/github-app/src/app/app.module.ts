@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RepoListComponent } from './components/repo-list/repo-list.component';
 import { NavComponent } from './nav/nav.component';
 import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
+import { SkeletonComponent } from './components/skeleton/skeleton.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
     RepoListComponent,
     NavComponent,
     DarkToggleComponent,
+    SkeletonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
