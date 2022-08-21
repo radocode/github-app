@@ -4,9 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RepoListComponent } from './components/repo-list/repo-list.component';
+import { NavComponent } from './nav/nav.component';
+import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
 
 @NgModule({
-  declarations: [AppComponent, RepoListComponent],
+  declarations: [
+    AppComponent,
+    RepoListComponent,
+    NavComponent,
+    DarkToggleComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
