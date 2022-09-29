@@ -7,6 +7,7 @@ import { RepoListComponent } from './components/repo-list/repo-list.component';
 import { NavComponent } from './nav/nav.component';
 import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
 import { SkeletonComponent } from './components/skeleton/skeleton.component';
+import { RepoItemComponent } from './components/repo-item/repo-item.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SkeletonComponent } from './components/skeleton/skeleton.component';
     NavComponent,
     DarkToggleComponent,
     SkeletonComponent,
+    RepoItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

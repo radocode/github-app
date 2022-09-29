@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubApiService } from 'src/app/services/github-api.service';
 import { DarkToggleService } from 'src/app/services/dark-toggle.service';
+import { Commit } from 'src/model/commit.model';
 
 @Component({
   selector: 'app-repo-list',
@@ -8,7 +9,7 @@ import { DarkToggleService } from 'src/app/services/dark-toggle.service';
   styleUrls: ['./repo-list.component.css'],
 })
 export class RepoListComponent implements OnInit {
-  commits: any[];
+  commits: Commit[];
   loaded: boolean;
   darkMode = this.darkToggleService.toggleState$;
 
