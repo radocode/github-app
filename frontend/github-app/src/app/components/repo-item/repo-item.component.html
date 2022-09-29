@@ -1,0 +1,18 @@
+<li class="flex items-stretch py-4 first:pt-0 last:pb-0 dark:bg-gray-800">
+  <img class="h-10 w-10 rounded-full" src="{{ commit.avatar }}" alt="" />
+
+  <div class="ml-3 overflow-hidden">
+    <p class="text-sm font-medium text-slate-900 dark:text-white">
+      {{ commit.author }}
+    </p>
+    <p class="text-sm text-slate-500 truncate dark:text-white">
+      {{ commit.date | date: "fullDate" }}
+    </p>
+    <p class="text-sm text-slate-500 truncate dark:text-white">
+      Sha: {{ commit.sha }}
+    </p>
+    <p class="text-sm text-slate-500 truncate dark:text-white">
+      Comment: {{ commit.description }}
+    </p>
+  </div>
+</li>
