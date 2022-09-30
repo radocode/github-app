@@ -4,7 +4,7 @@ Github-app is a Github commit history app made in Angular and Nest.js
 
 ## Requirements
 
-Node v14 or greater with npm.
+Node v16.17.0 (LTS) or greater with npm.
 
 ## Installation
 
